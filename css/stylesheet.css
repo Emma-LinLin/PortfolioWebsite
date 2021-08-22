@@ -47,6 +47,13 @@ body{
     border: 0.5em solid var(--clr-primary);
 }
 
+@media screen and (min-width:992px){
+    .header__img{
+        width:40vw;
+        height:auto;
+    }
+}
+
 .header__text{
     display:flex;
     flex-direction: column;
