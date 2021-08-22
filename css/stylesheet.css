@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+:root{
+--clr-primary: rgb(255, 255, 255);
+--clr-primary-dark: rgb(82, 82, 82);
+--clr-secondary-light: rgb(247, 198, 134);
+--clr-accent: rgba(239, 255, 9, 0.705);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    color:var(--clr-primary-dark);
+}
+
+.header__bg{
+    background-color: var(--clr-secondary-light);
+    position: absolute;
+    height: 8rem;
+    width: 100%;
+    z-index: -1;
+}
+
+/* fetched from: https://unsplash.com/photos/wHddViTmSvA */
+.wallpaper__wrapper{
+    background: url("../images/wallpaper.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    z-index: -10;
+    opacity: 0.5;
+    position: fixed;
+}
+
+.img__wrapper {
+    width: max-content;
+    margin: 0 auto;
+  }
+
+.header__img{
+    width:80vw;
+    height:auto;
+    border-radius: 50%;
+    border: 0.5em solid var(--clr-primary);
+}
+
+.header__text{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+}
+
+.main__nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main__nav{
+    padding: 2em 2em;
+}
+.main__nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+
+ a {
+    color: var(--clr-primary-dark);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+ a:hover, a:focus {
+    color: var(--clr-accent);
+    cursor: pointer;
+}
+
+.about{
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 50vh;
+    width: 100%;
+}
+
+.portfolio{
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 50vh;
+    width: 100%;
+}
+
+.gameplay{
+    text-align: center;
+}
+
+#game{
+    margin:auto;
+    width:500px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#character{
+    width:20px;
+    height:50px;
+    background-color:black;
+    position:relative;
+    top:150px;
+}
+
+#block{
+    width:20px;
+    height:20px;
+    background-color:black;
+    position:relative;
+    top:130px;
+    left:480px;
+    animation: block 1s;
+}
+@keyframes block{
+    0%{left:480px;}
+    100%{left:-40px;}
+}
+
+.footer__wrapper{
+    background-color: var(--clr-secondary-light);
+    position: absolute;
+    height: 8rem;
+    width: 100%;
+}
