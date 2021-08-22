@@ -99,6 +99,10 @@ body{
     width: 100%;
 }
 
+.gametext{
+    margin:0;
+}
+
 .gameplay{
     text-align: center;
 }
@@ -117,6 +121,15 @@ body{
     position:relative;
     top:150px;
 }
+.animate{
+    animation: jump 1500ms;
+}
+@keyframes jump{
+    0%{top:150px;}
+    50%{top:100px;}
+    80%{top: 150px;}
+    100%{top:150px;}
+}
 
 #block{
     width:20px;
@@ -125,7 +138,7 @@ body{
     position:relative;
     top:130px;
     left:480px;
-    animation: block 1s;
+    animation: block 2s infinite linear;
 }
 @keyframes block{
     0%{left:480px;}
