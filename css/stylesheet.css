@@ -47,7 +47,7 @@ body{
     border: 0.5em solid var(--clr-primary);
 }
 
-@media screen and (min-width:992px){
+@media screen and (min-width:768px){
     .header__img{
         width:40vw;
         height:auto;
@@ -92,17 +92,22 @@ body{
     text-align: center;
     padding: 0;
     margin: 0;
-    height: 50vh;
+    height: 30vh;
     width: 100%;
+}
+
+.p-5{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    text-align:center;
 }
 
 .portfolio{
     display:flex;
     flex-direction:column;
     text-align: center;
-    padding: 0;
     margin: 0;
-    height: 50vh;
     width: 100%;
 }
 
