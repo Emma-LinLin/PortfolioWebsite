@@ -4,7 +4,7 @@
 --clr-primary: rgb(255, 255, 255);
 --clr-primary-dark: rgb(82, 82, 82);
 --clr-secondary-light: rgb(247, 198, 134);
---clr-accent: rgba(239, 255, 9, 0.705);
+--clr-accent: rgba(236, 253, 0, 0.932);
 }
 
 body{
@@ -58,6 +58,7 @@ body{
     display:flex;
     flex-direction: column;
     text-align:center;
+    gap:0.5em;
 }
 
 .main__nav ul{
@@ -90,10 +91,27 @@ body{
     display:flex;
     flex-direction:column;
     text-align: center;
-    padding: 0;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     margin: 0;
     height: 30vh;
-    width: 100%;
+    width:100%;
+}
+
+.about p span{
+    display: block;
+}
+
+.progress__bar{
+    text-align:center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin:0;
+}
+
+.progress{
+    width: 80%;
+    margin:0;
 }
 
 .p-5{
@@ -159,7 +177,24 @@ body{
 
 .footer__wrapper{
     background-color: var(--clr-secondary-light);
+    text-align:center;
     position: absolute;
     height: 8rem;
     width: 100%;
+}
+
+.github__logo{
+    width:3rem;
+    height:auto;
+}
+
+.linkedin__logo{
+    width:3rem;
+    height:auto;
+}
+
+.icons{
+    display:flex;
+    justify-content:center;
+    gap:2em;
 }

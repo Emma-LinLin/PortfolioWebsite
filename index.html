@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="css/stylesheet.css" />
     <title>Portfolio</title>
 
@@ -22,7 +23,6 @@
                 </ul>
             </nav>
         
-
         <div class="img__wrapper">
             <img 
             src="images/profile_img.jpg" 
@@ -35,22 +35,60 @@
             <h3>.NET Developer</h3>
         </div>
     </header>
+
     <!--Section-->
     <section class="about">
         <p>
             <h2>About</h2>
-            Hi! My name is Emma and I'm studying to become a .NET developer.
-            Previously I've worked as a technical support agent at a start up 
-            located in Gothenburg. During my time there I got very interested in development and decided to go back to school in autumn 2020.
+            <span>Hi! My name is Emma and I'm studying to become a .NET developer.</span>
+            <span>Previously I've worked as a technical support agent at a start up 
+            located in Gothenburg.</span> 
+            <span>During my time there I got very interested in development and decided to go back to school in autumn 2020.</span>
         </p>
     </section>
 
+    <!--Progress Bootstrap-->
+    <div class="progress__bar">
+        <h3 class="skills">Skills</h3>
+        <p>0%-25% would be basic knowledge, 25%-75% would be moderate knowledge, 75%-100% would be clear knowledge</p>
+
+    <div class="progress mx-auto">
+        <div class="progress-bar bg-dark" role="progressbar" style="width: 15%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        <small class="justify-content-center d-flex position-absolute w-80 text-white">15% Unity</small>
+      </div>
+      <div class="progress mx-auto">
+        <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        <small class="justify-content-center d-flex position-absolute w-80 text-white">50% Unit Testing</small>
+      </div>
+      <div class="progress mx-auto">
+        <div class="progress-bar bg-dark" role="progressbar" style="width: 40%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        <small class="justify-content-center d-flex position-absolute w-80 text-white">40% Entity Framework</small>
+      </div>
+      <div class="progress mx-auto">
+        <div class="progress-bar bg-secondary" role="progressbar" style="width: 55%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        <small class="justify-content-center d-flex position-absolute w-80 text-white">55% C#</small>
+      </div>
+      <div class="progress mx-auto">
+        <div class="progress-bar bg-dark" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        <small class="justify-content-center d-flex position-absolute w-80 text-white">25% HTML and CSS</small>
+      </div>
+    </div>
+
+    <!--footer-->
     <footer>
         <div class ="footer__wrapper">
             <h2>Contact</h2>
-
+            <div class="icons">
+                <a href="https://github.com/Emma-LinLin" target="_blank">
+                    <img src="images/github_PNG19.png" alt= "github logo" class ="github__logo"/>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="images/linkedin-png-linkedin-icon-1600.png" alt= "linkedin logo." class ="linkedin__logo"/>
+                </a>
+            </div>
         </div>
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
